@@ -2,39 +2,65 @@
 <html lang="en">
 
 <head>
+
     <style>
         body {
             text-align: center;
-            color: aquamarine;
-
+            font-size: 50px;
+            background-color: #313552;
         }
 
         h1 {
-            color: azure;
-            font-size: larger;
+            color: white
+        }
+
+        button {
+            font-size: 60px;
+            padding: 10px 60px;
+            margin: 40px;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            border: 0px
         }
     </style>
+
+
 </head>
 
 <body>
 
-    <h1>hello everyone </h1>
-    <label>button</label>
-    <option>gender</option>
-    <p>please reay me </p>
-    <h3>good to see everyone doing coding. Thank</h3>
-    <h1>my push after cloning</h1>
+
+    <h1>0</h1>
+
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+
+
     <script>
-        let balance = 0;
-        function balance() {
-            console.log(balance)
-        }
-        let withdraw = 0;
-        function balance() {
-            console.log(withdraw)
-        }
+
+        const h1 = document.querySelector("h1");
+        const plusBtn = document.querySelector("#plus");
+        const minusBtn = document.querySelector("#minus");
+
+        let counter = 0;
+
+        plusBtn.addEventListener("click", function () {
+            counter++;
+            h1.innerText = counter;
+        })
+
+        minusBtn.addEventListener("click", function () {
+            counter--;
+            h1.innerText = counter;
+        })
+
+
     </script>
 
+
 </body>
+
+</html>
 
 </html>
